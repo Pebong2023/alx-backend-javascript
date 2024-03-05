@@ -8,5 +8,5 @@ export default function taskBlock(trueOrFalse) {
 		task2 = false;
 	}
 
-	return [task, task2]
+	return [task, task2];
 }
