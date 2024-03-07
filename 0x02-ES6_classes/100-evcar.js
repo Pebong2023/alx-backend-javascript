@@ -9,14 +9,9 @@ class EVCar extends Car {
   }
 
   cloneCar() {
-    const { brand, motor, color } = this;
+    const { [brandSymbol]: brand, [motorSymbol]: motor, [colorSymbol]: color } = this;
     return new Car(brand, motor, color);
-  }
-
-  getRange() {
-    return this[rangeSymbol];
   }
 }
 
 export default EVCar;
-
